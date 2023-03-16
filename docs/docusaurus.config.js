@@ -9,8 +9,8 @@ const config = {
   title: "Interchain Security",
   tagline:
     "Interchain Security is a project to build a security layer for the Cosmos ecosystem.",
-  url: "http://localhost:3000",
-  baseUrl: "/",
+  url: "https://MSalopek.github.io",
+  baseUrl: "/interchain-security/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "cosmos",
+  organizationName: "MSalopek",
   projectName: "interchain-security",
 
   // Even if you don't use internalization, you can use this field to set useful
