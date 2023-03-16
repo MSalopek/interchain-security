@@ -9,7 +9,7 @@ const config = {
   title: "Interchain Security",
   tagline:
     "Interchain Security is a project to build a security layer for the Cosmos ecosystem.",
-  url: "https://MSalopek.github.io",
+  url: "https://msalopek.github.io",
   baseUrl: "/interchain-security/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
