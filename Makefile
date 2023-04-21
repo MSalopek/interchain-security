@@ -61,7 +61,7 @@ test-gaia-integration-parallel-tagged:
 
 # run all tests with caching disabled
 test-no-cache:
-	go test ./... -count=1 && go run ./tests/integration/...
+	go test ./... && go run ./tests/integration/...
 
 mockgen_cmd=go run github.com/golang/mock/mockgen
 mocks:
