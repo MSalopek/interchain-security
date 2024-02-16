@@ -7,7 +7,7 @@ for version in $(jq -r .[] versions.json); do
     npm cache clean --force && npm install && npm run docusaurus docs:version $version
 
     # versions.json / package-lock.json, get mangled by Docusarus causing problems
-    rm versions.json package-lock.json
+    # rm versions.json package-lock.json
 done
 
 # Rebuild main/commit level docs
