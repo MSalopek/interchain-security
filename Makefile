@@ -235,7 +235,11 @@ proto-update-deps:
 ###############################################################################
 
 build-docs:
-	@cd docs && ./build.sh
+	@cd docs && ./sync_versions.sh && ./build_deploy.sh
+
+build-local-docs:
+	@cd docs && ./sync_versions.sh && ./build_local.sh
+
 
 .PHONY: build-docs
 
