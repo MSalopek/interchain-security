@@ -39,7 +39,7 @@ jobs:
           npm install -g npm@10.2.4
           cd docs
           ./sync_versions.sh
-          ./build_deploy
+          ./build_deploy.sh
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.5.0
