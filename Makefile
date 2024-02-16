@@ -236,7 +236,6 @@ proto-update-deps:
 
 build-docs:
 	@cd docs && ./build.sh
-	@cp -r docs/legacy ./docs/build
 
 .PHONY: build-docs
 

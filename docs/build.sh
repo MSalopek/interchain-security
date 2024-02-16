@@ -13,13 +13,20 @@ done
 # Rebuild main/commit level docs
 echo "Building docusaurus main docs ..."
 
-rm package-lock.json
-git checkout $COMMIT 
+# rm package-lock.json
+
+cp -R figures ./versioned_docs/
+echo "building docusaurus main docs"
+git checkout $COMMIT
+npm ci && npm run build
+cp -r legacy /build
+mv build ~/output
+echo "done building docusaurus main docs"
 
 # Move figures over
-cp -R figures ./versioned_docs/
 
 # Actual build
-npm install && npm run build
-
-echo "Finished building docs ... "
+# npm install && npm run build
+# mv build ~/output
+# echo "done building docusaurus main docs"
+# echo "Finished building docs ... "
