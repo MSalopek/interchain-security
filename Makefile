@@ -234,7 +234,7 @@ proto-update-deps:
 ###                              Documentation                              ###
 ###############################################################################
 
-build-docs:
+build-docs-deploy:
 	@cd docs && ./sync_versions.sh && ./build_deploy.sh
 
 build-local-docs:
