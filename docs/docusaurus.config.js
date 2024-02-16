@@ -94,7 +94,7 @@ const config = {
             dropdownActiveClassDisabled: false,
             dropdownItemsAfter: [
               {
-                href: "https://msalopek.github.io/interchain-security/legacy/",
+                href: "https://msalopek.github.io/interchain-security/legacy",
                 label: "<=v3.x",
                 target: "_blank",
               },
