@@ -91,7 +91,14 @@ const config = {
           {
             type: "docsVersionDropdown",
             position: "left",
-            dropdownActiveClassDisabled: true,
+            dropdownActiveClassDisabled: false,
+            dropdownItemsAfter: [
+              {
+                href: "http://localhost/interchain-security/legacy/",
+                label: "<= v3.x",
+                target: "_blank",
+              },
+            ],
           },
         ],
       },
@@ -211,7 +218,7 @@ const config = {
         toExtensions: ["html"],
         redirects: [
           {
-            from: ["/main", "/master"],
+            from: ["/main"],
             to: "/",
           },
         ],
