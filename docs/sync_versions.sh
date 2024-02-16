@@ -4,6 +4,7 @@
 COMMIT=$(git rev-parse HEAD)
 for version in $(jq -r .[] versions.json); do
     echo "Building docusaurus $version docs ..."
+    git fetch origin tag $version
     git checkout $version
     npm cache clean --force && npm install && npm run docusaurus docs:version $version
 
