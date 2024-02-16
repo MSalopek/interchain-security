@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # initial branch
-BRANCH=$(git rev-parse --abbrev-ref HEAD)
+COMMIT=$(git rev-parse HEAD)
 for version in $(jq -r .[] versions.json); do
     echo "Building docusaurus $version docs ..."
     git checkout $version
@@ -12,7 +12,7 @@ for version in $(jq -r .[] versions.json); do
 done
 
 # return to initial branch but keep the files created by Docusarus in the loop above
-(git reset --hard && git checkout $BRANCH)
+(git reset --hard && git checkout $COMMIT)
 
 # copy figures so they are available to all versioned docs
 cp -R figures ./versioned_docs/
