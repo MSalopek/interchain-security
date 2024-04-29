@@ -8,3 +8,6 @@ vendor/
 build/
 .vscode
 .idea
+
+docs/versioned_sidebars
+docs/versioned_docs
