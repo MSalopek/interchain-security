@@ -4,6 +4,13 @@ echo "######### BUILD DOCS #########"
 
 echo "building docusaurus main docs"
 npm ci && npm run build
+
+mkdir legacy
+git fetch origin
+git checkout origin/v3-docs-legacy -- legacy/**
+echo $(pwd)
+echo $(ls -alh ../)
+echo $(ls -alh)
 # copy legacy docs to build folder
 cp -r ./legacy ./build/
 mv build ~/output
