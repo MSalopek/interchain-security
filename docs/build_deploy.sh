@@ -5,9 +5,8 @@ echo "######### BUILD DOCS #########"
 echo "building docusaurus main docs"
 npm ci && npm run build
 
-mkdir legacy
 git fetch origin
-git checkout origin/v3-docs-legacy -- legacy/**
+git checkout v3-docs-legacy -- legacy/**
 echo $(pwd)
 echo $(ls -alh ../)
 echo $(ls -alh)
