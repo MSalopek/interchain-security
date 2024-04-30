@@ -12,7 +12,7 @@ for version in $(jq -r .[] versions.json); do
 done
 
 git fetch origin
-git checkout origin/v3-docs-legacy -- legacy
+git checkout v3-docs-legacy -- legacy
 
 # return to initial branch but keep the files created by Docusarus in the loop above
 (git reset --hard && git checkout $COMMIT)
